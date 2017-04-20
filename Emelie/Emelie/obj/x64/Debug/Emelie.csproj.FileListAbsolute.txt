@@ -1,5 +1,5 @@
-C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\obj\x64\Debug\Emelie.csprojResolveAssemblyReference.cache
 C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\bin\Debug\Emelie.exe
 C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\bin\Debug\Emelie.pdb
+C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\obj\x64\Debug\Emelie.csprojResolveAssemblyReference.cache
 C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\obj\x64\Debug\Emelie.exe
 C:\Users\Hydra\Dropbox\Coding\Emelie\Emelie\obj\x64\Debug\Emelie.pdb

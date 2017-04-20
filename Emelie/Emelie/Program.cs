@@ -1,9 +1,6 @@
 ﻿using System;
 using Starcounter;
 
-
-
-
 namespace Emelie
 {
     [Database]
@@ -30,24 +27,7 @@ namespace Emelie
         public decimal AverageCommission; // => (Db.SQL<decimal>("SELECT SUM(e.EstateCommission) FROM Emelie.Estate e WHERE e.Seller = ?", this).First) / HomesSold;
         public decimal Trend;
         public MainCompany Spender;
-        //public QueryResultRows<Estate> EstateList => Db.SQL<Estate>("SELECT e FROM Emelie.Estate e WHERE e.Seller = ?", this);
     }
-    /*
-    [Database]
-    public class Estate
-    {
-        public string EstateStreet;
-        public int EstateNumber;
-        public int EstateZipCode;
-        public string EstateCity;
-        public string EstateCountry;
-        public string EstateDate;
-        public int EstateSalePrice;
-        public int EstateCommission;
-        public Company Seller;
-
-    }*/
-
 
     class Program
     {
@@ -84,30 +64,17 @@ namespace Emelie
                     }
                     json.Session = Session.Current;
 
-                    if (company.CompanyList != null)
-                    {
-                        json.RefreshCompanies(company.CompanyList);
-                    }
-
                     return json;
                 });
-               
+
             });
 
             Handle.GET("/Emelie/partial/company/{?}", (string id) =>
             {
                 var json = new Emelie_Company_Json();
-                json.Data = (Company) DbHelper.FromID(DbHelper.Base64DecodeObjectID(id));
-                //json.Data = DbHelper.FromID(DbHelper.Base64DecodeObjectID(id));
-                return json;
-            });
-            /*
-            Handle.GET("/Emelie/partial/estate/{?}", (string id) =>
-            {
-                var json = new Emelie_Estate_Json();
                 json.Data = DbHelper.FromID(DbHelper.Base64DecodeObjectID(id));
                 return json;
-            });*/
+            });
         }
     }
 }

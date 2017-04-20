@@ -5,7 +5,7 @@ namespace Emelie
     partial class Emelie_MainCompany_Json : Json, IBound<MainCompany>
     {
         public string Info => Name;
-        
+
         void Handle(Input.SaveTrigger action)
         {
             Transaction.Commit();
@@ -52,6 +52,5 @@ namespace Emelie
                 AddCompany(company);
             }
         }
-
     }
 }

@@ -59,8 +59,6 @@ public partial class Emelie_Company_Json : __Json__ {
     protected override _ScTemplate_ GetDefaultTemplate() { return DefaultTemplate; }
     [_GEN1_][_GEN2_("Starcounter","2.0")]
     public new __EmSchema__ Template { get { return (__EmSchema__)base.Template; } set { base.Template = value; } }
-    [_GEN1_][_GEN2_("Starcounter","2.0")]
-    public new Company Data { get { return (Company)base.Data; } set { base.Data = value; } }
     public override bool IsCodegenerated { get { return true; } }
     #line default
     
@@ -261,11 +259,11 @@ public partial class Emelie_Company_Json : __Json__ {
     #line default
     [_GEN1_][_GEN2_("Starcounter","2.0")]
     public System.Int64 Trend {
-    #line 12 "Emelie_Company_Json.json"
+    #line 11 "Emelie_Company_Json.json"
         get {
         #line hidden
             return Template.Trend.Getter(this); }
-        #line 12 "Emelie_Company_Json.json"
+        #line 11 "Emelie_Company_Json.json"
         set {
         #line hidden
             Template.Trend.Setter(this, value); } }
