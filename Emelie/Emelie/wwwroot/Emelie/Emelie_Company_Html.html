@@ -1,0 +1,46 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Number of homes sold</th>
+                <th>Total commission</th>
+                <th>Average commission</th>
+                <th>Trend</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com">{{model.NameInfo}}</a></td>
+                <td>{{model.HomesSold}}</td>
+                <td>{{model.Commission}}</td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{model.CompanyName$::input}}">
+
+            <label>Street:</label>
+            <input value="{{model.Street$::input}}">
+
+            <label>Number:</label>
+            <input value="{{model.Number$::input}}">
+
+            <br>
+
+            <label>ZipCode:</label>
+            <input value="{{model.ZipCode$::input}}">
+
+            <label>City:</label>
+            <input value="{{model.City$::input}}">
+
+            <label>Country:</label>
+            <input value="{{model.Country$::input}}">
+
+            <br>
+        </fieldset>
+        <hr>
+    </template>
+</template>

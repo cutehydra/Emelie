@@ -1,0 +1,37 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <fieldset>
+            <label>Street:</label>
+            <input value="{{model.EstateStreet$::input}}">
+
+            <label>Number:</label>
+            <input value="{{model.EstateNumber$::input}}">
+
+            <label>Zip code:</label>
+            <input value="{{model.EstateZipCode$::input}}">
+
+            <br>
+
+            <label>City:</label>
+            <input value="{{model.EstateCity$::input}}">
+
+            <label>Country:</label>
+            <input value="{{model.EstateCountry$::input}}">
+
+            <label>Date (format '2016-05-28'):</label>
+            <input value="{{model.EstateDate$::input}}">
+
+            <br>
+
+            <label>Sale price:</label>
+            <input value="{{model.EstateSalePrice$::input}}">
+
+            <label>Commission:</label>
+            <input value="{{model.EstateCommission$::input}}">
+
+            <br>
+        </fieldset>
+    </template>
+</template>

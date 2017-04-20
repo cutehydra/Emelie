@@ -1,0 +1,44 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+
+<template>
+    <template is="dom-bind">
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.9";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <h1><strong>Welcome</strong></h1>
+        <h2>Create Main Corporation</h2>
+
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{model.Name$::input}}">
+        </fieldset>
+        <button value="{{model.SaveTrigger$::click}}" onmousedown="++this.value">Create corporation/ Update name</button>
+        <h2>List of Corporations</h2>
+        <hr>
+        <h1>{{model.Info}}</h1>
+
+        <template is="dom-repeat" items="{{model.Companies}}">
+            <div>
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </div>
+        </template>
+        <button value="{{model.AddNewCompanyTrigger$::click}}" onmousedown="++this.value"><strong>Add new Company</strong></button>
+        <button value="{{model.DeleteCompanyTrigger$::click}}" onmousedown="++this.value"><strong>Delete all Companies</strong></button>
+        <button value="{{model.CancelTrigger$::click}}" onmousedown="++this.value"><strong>Cancel</strong></button>
+        <button value="{{model.SaveTrigger$::click}}" onmousedown="++this.value"><strong>Save changes</strong></button>
+        <hr>
+        <h2>Total number of homes sold: {{model.TotalHomesSold}}</h2>
+        <br>
+        <div class="fb-like" data-href="http://127.0.0.1:8080/Emelie" data-width="100" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+        <div class="fb-send" data-href="http://127.0.0.1:8080/Emelie"></div>
+    </template>
+</template>

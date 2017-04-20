@@ -1,0 +1,17 @@
+{
+  "Html": "/Emelie/Emelie_Company_Html.html",
+  "CompanyName$": "",
+  "Street$": "",
+  "Number$": 0,
+  "ZipCode$": 0,
+  "City$": "",
+  "Country$": "",
+  "HomesSold": 0,
+  "Commission": 0,
+  //"CalcAverageCommission": 0,
+  "Trend": 0,
+  "NameInfo": ""/*,
+  "Estates": [{}],
+  "AddNewEstateTrigger$": 0,
+  "DeleteEstateTrigger$": 0*/
+}
